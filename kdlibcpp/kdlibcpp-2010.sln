@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{79017C7B-BBC7-4432-947F-7A25F559695B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlib", "kdlib\source\kdlib.vcxproj", "{3E9C538F-F060-4E86-AB7D-D44439615B63}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlibtest", "kdlib\tests\kdlibtest\kdlibtest.vcxproj", "{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF} = {0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetapp", "kdlib\tests\targetapp\targetapp.vcxproj", "{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{3F87C2B3-5A4B-46C0-8669-05225C0B7D39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "skdlib", "kdlib\samples\windbgext\windbgext.vcxproj", "{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E9C538F-F060-4E86-AB7D-D44439615B63} = {3E9C538F-F060-4E86-AB7D-D44439615B63}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "swig", "kdlib\samples\swig\swig.vcxproj", "{39FBBCCA-187B-4409-9131-8165B90EE626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9C538F-F060-4E86-AB7D-D44439615B63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E9C538F-F060-4E86-AB7D-D44439615B63}.Debug|Win32.Build.0 = Debug|Win32
+		{3E9C538F-F060-4E86-AB7D-D44439615B63}.Release|Win32.ActiveCfg = Release|Win32
+		{3E9C538F-F060-4E86-AB7D-D44439615B63}.Release|Win32.Build.0 = Release|Win32
+		{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}.Debug|Win32.Build.0 = Debug|Win32
+		{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}.Release|Win32.ActiveCfg = Release|Win32
+		{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}.Release|Win32.Build.0 = Release|Win32
+		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}.Debug|Win32.Build.0 = Debug|Win32
+		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}.Release|Win32.ActiveCfg = Release|Win32
+		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}.Release|Win32.Build.0 = Release|Win32
+		{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F}.Debug|Win32.Build.0 = Debug|Win32
+		{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F}.Release|Win32.ActiveCfg = Release|Win32
+		{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F}.Release|Win32.Build.0 = Release|Win32
+		{39FBBCCA-187B-4409-9131-8165B90EE626}.Debug|Win32.ActiveCfg = Debug|Win32
+		{39FBBCCA-187B-4409-9131-8165B90EE626}.Debug|Win32.Build.0 = Debug|Win32
+		{39FBBCCA-187B-4409-9131-8165B90EE626}.Release|Win32.ActiveCfg = Release|Win32
+		{39FBBCCA-187B-4409-9131-8165B90EE626}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD6EC442-26EE-4EC5-A66D-B03D0B7D1B8F} = {3F87C2B3-5A4B-46C0-8669-05225C0B7D39}
+		{39FBBCCA-187B-4409-9131-8165B90EE626} = {3F87C2B3-5A4B-46C0-8669-05225C0B7D39}
+	EndGlobalSection
+EndGlobal
