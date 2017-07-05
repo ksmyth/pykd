@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{3F87C2B3-5A4B-46C0-8669-05225C0B7D39}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlib", "kdlib\source\kdlib_vc120.vcxproj", "{3E9C538F-F060-4E86-AB7D-D44439615B63}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlib", "source\kdlib_vc120.vcxproj", "{3E9C538F-F060-4E86-AB7D-D44439615B63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{275A90E3-AA34-4ED2-AD22-56CBB2A1E131}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,9 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{275A90
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetapp", "kdlib\tests\targetapp\targetapp_vc120.vcxproj", "{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "targetapp", "tests\targetapp\targetapp_vc120.vcxproj", "{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlibtest", "kdlib\tests\kdlibtest\kdlibtest_vc120.vcxproj", "{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kdlibtest", "tests\kdlibtest\kdlibtest_vc120.vcxproj", "{32CB9F5C-E114-40C1-8416-ACCC7CF5B0A1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF} = {0E4CC688-F2F5-499F-9C07-0F2CAEE0D3EF}
 	EndProjectSection

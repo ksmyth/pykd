@@ -1,0 +1,11 @@
+*.VC.opendb
+*.VC.db
+UpgradeLog.htm
+kdlibcpp/packages/
+out/
+packages/
+pykd/Win32/
+pykd/x64/
+pykd_bootstrapper/Release_2.7/
+pykd_bootstrapper/x64/
+

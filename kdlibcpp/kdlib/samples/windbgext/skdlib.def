@@ -1,6 +1,0 @@
-EXPORTS
-	DebugExtensionInitialize
-	DebugExtensionUninitialize
-	KnownStructOutput
-	help
-	input

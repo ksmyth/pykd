@@ -1,0 +1,21 @@
+﻿  boost_regex.cpp_regex_traits.cpp
+  boost_regex.cregex.cpp
+  boost_regex.c_regex_traits.cpp
+  boost_regex.fileiter.cpp
+  boost_regex.icu.cpp
+  boost_regex.instances.cpp
+  boost_regex.posix_api.cpp
+  boost_regex.regex.cpp
+  boost_regex.regex_debug.cpp
+  boost_regex.regex_raw_buffer.cpp
+  boost_regex.regex_traits_defaults.cpp
+  boost_regex.static_mutex.cpp
+  boost_regex.usinstances.cpp
+  boost_regex.w32_regex_traits.cpp
+  boost_regex.wc_regex_traits.cpp
+  boost_regex.wide_posix_api.cpp
+  boost_regex.winstances.cpp
+  boost_chrono.chrono.cpp
+  boost_chrono.process_cpu_clocks.cpp
+  boost_chrono.thread_clock.cpp
+  kdlib_vc120.vcxproj -> C:\Users\kevin\Documents\pykd\branch\0.3.x\out\x64\Release_Static\kdlib.lib
