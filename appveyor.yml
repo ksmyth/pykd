@@ -1,0 +1,17 @@
+environment:
+  matrix:
+  - platform: x64
+    configuration: Release_2.7
+  - platform: Win32
+    configuration: Release_2.7
+
+cache:
+  - packages -> **\packages.config
+
+build_script:
+  - .\.nuget\NuGet.exe restore pykd-0.3-2013.sln
+  - .\.nuget\NuGet.exe restore kdlibcpp\kdlibcpp-2013.sln
+  - msbuild pykd-0.3-2013.sln /m /p:Configuration=%configuration%;platform=%platform%
+
+artifacts:
+  - path: 'out\*\*\pykd.pyd'
