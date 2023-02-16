@@ -9,6 +9,18 @@
 #include <boost/python/extract.hpp>
 #include <boost/python/handle.hpp>
 
+#if PY_MAJOR_VERSION >= 3 && PY_MINOR_VERSION >= 10
+
+static FILE* _Py_fopen(char* path, char* mode) {
+    PyObject* obj = Py_BuildValue("s", path);
+    FILE* file = _Py_fopen_obj(obj, mode);
+
+    Py_DECREF(obj);
+    return file;
+}
+#endif
+
+
 namespace boost 
 { 
 namespace python 
