@@ -1,0 +1,22 @@
+image: Visual Studio 2017
+
+environment:
+  matrix:
+  - platform: x64
+    configuration: Release_3.10
+  - platform: Win32
+    configuration: Release_3.10
+
+cache:
+  - packages -> **\packages.config
+
+before_build:
+  - git submodule update --init --recursive
+
+build_script:
+  - NuGet.exe restore pykd.sln
+  # n.b. llvm-cmake.targets does not support Visual Studio later than 15 (2017)
+  - '"c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe" pykd.sln /m /p:Configuration=%configuration%;platform=%platform%'
+
+artifacts:
+  - path: 'out\*\*\pykd.pyd'
