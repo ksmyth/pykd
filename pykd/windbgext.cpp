@@ -50,7 +50,7 @@ void PykdExt::setUp()
 
 #endif
 
-    Py_Initialize();
+    Py_InitializeEx(0);
 
     PyEval_InitThreads();
 
